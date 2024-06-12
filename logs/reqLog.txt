@@ -1,0 +1,15 @@
+20240524	11:16:46	8d18a9ac-7bba-4961-9e66-616b321fa10f	GET	undefined	/users/list
+20240601	23:02:30	e2ba6943-db0c-49dc-ab44-99f784780a77	GET	undefined	/
+20240601	23:52:30	48595a98-936b-4581-887c-28b2e89d3fd5	GET	undefined	/favicon.ico
+20240601	23:52:54	933fc537-10d7-463b-a163-a97bda6f8f6d	GET	undefined	/
+20240601	23:53:21	7451053f-ef21-44cf-91bf-fad4341a201e	GET	undefined	/list
+20240601	23:53:21	9d1f15e8-b3c1-4f3a-9956-e7e0e10d45f1	GET	undefined	/css/style.css
+20240601	23:56:31	d687c7d4-8aa0-45c7-8a4c-c19720bcfa63	GET	undefined	/
+20240601	23:56:31	2d8c5d10-c68a-4f9e-ae66-83506e9663aa	GET	undefined	/
+20240611	00:07:26	8b0de80a-6abf-41d5-aca4-a015764c7ac8	GET	undefined	/
+20240611	00:07:30	d9245142-771a-4477-a591-2c2c824a6b57	GET	undefined	/css/style.css
+20240611	00:09:13	cdaaf1e4-a097-4074-9d1d-b054e24efb8e	GET	undefined	/users/list
+20240611	00:10:05	eb1f7fb0-6c3a-4cca-896e-c72cf16c0737	GET	undefined	/users/create
+20240611	00:15:03	33612ae4-3f3a-4774-8053-ffa8f3767605	GET	undefined	/users/create
+20240611	00:16:48	be2f06af-0222-467d-b625-749c4ba82753	POST	http://127.0.0.1:3500	/users/create
+20240611	00:20:48	3d68ac0d-7616-414b-96f7-8f3c06364d91	GET	undefined	/users/list
