@@ -1,0 +1,28 @@
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        title Document
+    body 
+         form(action="/users/create", method="POST") 
+             label user-name: 
+             input(type="text" name="username") 
+             br
+             hr
+             label first-name: 
+             input(type="text" name="firstName") 
+             br
+             hr
+             label last-name: 
+             input(type="text" name="lastName") 
+             br
+             hr
+             label password: 
+             input(type="password" name="password") 
+             br
+             hr
+             label email: 
+             input(type="email" name="email") 
+             br
+             hr
+             input(type="submit" value="create")         

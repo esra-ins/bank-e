@@ -1,0 +1,11 @@
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        title Document
+    body 
+        each account in accounts
+         div.account_item
+            p="user-id: "+account.userId+" .......... "+"account-number: "+account.id+"   ............ "+"balance: "+account.balance
+         hr          
+                     
