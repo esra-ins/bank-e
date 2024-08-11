@@ -1,8 +1,12 @@
-const User = require('./user')
-const Account = require('./account')
-const Transaction = require('./transaction')
+const User = require('./user');
+const Account = require('./account');
+const Transaction = require('./transaction');
 
-const { dbSequelize } = require('../config/dbConn')
+const { dbSequelize } = require('../config/dbConn');
+
+//* start */
+//const Transfer = require('./transfer')
+//* end */
 
 User.hasMany(Account);
 //Account.belongsTo(User);

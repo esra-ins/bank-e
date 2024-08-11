@@ -1,0 +1,1 @@
+20240811	20:01:03	be0460df-17bb-4c92-b828-bf8b48349f24	Error: Failed to lookup view "createTransfer" in views directory "/Users/esra.isik/Desktop/na-projects/bank-app-12/views"

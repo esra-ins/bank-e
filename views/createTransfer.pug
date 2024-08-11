@@ -1,0 +1,24 @@
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        title Document
+    body 
+        form(action="/transactions/transfer", method="POST") 
+            label from account-number: 
+            input(type="number" name="from_accountId")
+            br
+            hr
+            label to account-number: 
+            input(type="number" name="to_accountId")
+            br
+            hr
+            label amount: 
+            input(type="number" name="amount")
+            br
+            hr
+            label description: 
+            input(type="text" name="description")
+            br
+            hr
+            input(type="submit" value="transfer")        
