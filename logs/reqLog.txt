@@ -129,3 +129,15 @@
 20240903	12:23:40	d762d54b-c01e-4019-8963-db588367eb9c	GET	undefined	/accounts/list
 20240903	12:23:51	66a82581-77c4-4108-83da-f748ab54acb6	POST	undefined	/auth/login
 20240903	12:24:04	0aff4aba-3be9-45e3-abb2-4282f98a41de	GET	undefined	/accounts/list
+20240913	12:39:58	1f3f4a00-dffc-49ce-a581-7bf53bc053ce	GET	undefined	/users/create
+20240913	12:39:58	528a264d-243c-4b03-b368-0c444616924f	GET	undefined	/favicon.ico
+20240913	12:39:58	8877b22c-8e20-4900-81d9-b411476e20c4	GET	undefined	/apple-touch-icon-precomposed.png
+20240913	12:39:58	263ce62b-db6f-4c07-a4e0-d6bd63653f42	GET	undefined	/apple-touch-icon.png
+20240913	12:43:22	115d98ad-7d46-4b73-a802-e45f66491165	GET	undefined	/users/create
+20240913	12:44:10	6d77b7b0-ea4f-471f-ae02-efba1591d3af	POST	http://localhost:3500	/users/create
+20240913	12:44:27	0aaabed3-812b-498a-a2ed-1b5fe83f8d3c	GET	undefined	/users/create
+20240913	12:44:30	3aaca79f-6174-4afd-aad4-56ca085c3720	GET	undefined	/users/list
+20240913	12:44:36	2077f3fb-1a6c-4753-bafd-79b234a7bff5	GET	undefined	/users/create
+20240913	12:45:30	cc73f0ca-9cd5-4eac-a0b8-4f2b9bfd6482	POST	undefined	/auth/login
+20240913	12:45:48	92c711f2-cd4e-4d1f-8c81-bf8a323642a6	GET	undefined	/users/list
+20240913	12:46:47	7634ac96-3a12-4afb-98f9-823579dbc0a8	GET	undefined	/users/create

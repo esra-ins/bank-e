@@ -45,8 +45,9 @@ app.use('/', require('./routes/root'));
 app.use('/auth', require('./routes/api/auth'));
 
 //verify
-app.use(verifyJWT);
+
 app.use('/users', require('./routes/api/users'));
+app.use(verifyJWT); 
 app.use('/accounts', require('./routes/api/accounts'));
 app.use('/transactions', require('./routes/api/transactions'));
 
