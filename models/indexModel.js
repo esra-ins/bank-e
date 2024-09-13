@@ -4,6 +4,9 @@ const Transaction = require('./transaction');
 
 const { dbSequelize } = require('../config/dbConn');
 
+const Role = require('./role');
+const UserRole = require('./userRole');
+
 //* start */
 //const Transfer = require('./transfer')
 //* end */
@@ -12,8 +15,8 @@ User.hasMany(Account);
 //Account.belongsTo(User);
 Account.hasMany(Transaction);
 
-/* Project.hasMany(Task, { foreignKey: 'tasks_pk' });
-Task.belongsTo(Project, { foreignKey: 'tasks_pk' }); */
+Role.belongsToMany(User, { through: UserRole });
+User.belongsToMany(Role, { through: UserRole });
 
 //dbSequelize.sync({ force: true })
 

@@ -1,4 +1,5 @@
 const User = require('../models/user');
+const UserRole = require('../models/userRole');
 const bcrypt = require('bcryptjs');
 
 const getAllUsers = async (req, res) => {
@@ -11,7 +12,7 @@ const createUserForm = (req, res) => {
 };
 
 const createUser = async (req, res) => {
-    const { username, firstName, lastName, password, email } = req.body;
+    const { username, firstName, lastName, password, email,roleId } = req.body;
 
     const sameUsername = await User.findOne({
         where: {
@@ -39,6 +40,13 @@ const createUser = async (req, res) => {
         password,
         email
     });
+
+    const newUserRole = await UserRole.create({
+        userId:newUser.id,
+        roleId:roleId
+    })
+
+
 
     res.json({ 'message': `new user ${newUser.username} is created ` });
 };

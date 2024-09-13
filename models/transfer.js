@@ -1,4 +1,3 @@
-//* start */
 /*
 const Sequelize = require('sequelize');
 const { dbSequelize } = require('../config/dbConn');
@@ -23,14 +22,12 @@ const Transfer = dbSequelize.define('transfer', {
         allowNull: false,
         // possibility of sending money to another bank's account???
         //references: {
-         //   model: 'accounts',
-         //   key: 'id'
+        //   model: 'accounts',
+        //   key: 'id'
         // }
-
     },
     amount: {
         type: Sequelize.FLOAT
-
     },
     description: {
         type:Sequelize.STRING
@@ -39,5 +36,3 @@ const Transfer = dbSequelize.define('transfer', {
 
 module.exports = Transfer;
 */
-
-//* end */

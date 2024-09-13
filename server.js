@@ -8,6 +8,10 @@ const cors = require('cors');
 const corsOptions = require('./config/corsOptions');
 const { logger, logEvents } = require('./middleware/logEvents');
 const errorHandler = require('./middleware/errorHandler');
+//
+const cookieParser = require('cookie-parser');
+const verifyJWT = require('./middleware/verifyJWT');
+//note: remember to install jsonwebtoken and cookie-parser in vs code!!!
 const PORT = process.env.PORT || 3500;
 require('./models/indexModel');
 
@@ -19,6 +23,9 @@ app.use(express.json());
 
 //support parsing of application/x-www-form-urlencoded post data
 app.use(express.urlencoded({ extended: true }));
+
+//for jwt cookies
+app.use(cookieParser());
 
 //cors=cross origin resource sharing
 app.use(cors(corsOptions));
@@ -35,6 +42,10 @@ app.set('views', path.join(__dirname, 'views'));
 isConnectedToDb()
 
 app.use('/', require('./routes/root'));
+app.use('/auth', require('./routes/api/auth'));
+
+//verify
+app.use(verifyJWT);
 app.use('/users', require('./routes/api/users'));
 app.use('/accounts', require('./routes/api/accounts'));
 app.use('/transactions', require('./routes/api/transactions'));
@@ -50,15 +61,8 @@ app.all('*', (req, res) => {
     } else {
         res.type('txt').send('404 not found');
     }
-
 });
 
 app.use(errorHandler);
 
 app.listen(PORT, () => console.log(`server running on port ${PORT}`));
-
-
-
-
-
-

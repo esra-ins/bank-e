@@ -1,1 +1,4 @@
 20240811	20:01:03	be0460df-17bb-4c92-b828-bf8b48349f24	Error: Failed to lookup view "createTransfer" in views directory "/Users/esra.isik/Desktop/na-projects/bank-app-12/views"
+20240903	11:50:47	06dcfb75-695e-4d6c-99c9-efa164626bc7	TypeError: Cannot read properties of undefined (reading 'role')
+20240903	12:04:38	f18fd0c7-75cd-4262-a2db-80e257ac534a	TypeError: Cannot read properties of undefined (reading 'role')
+20240903	12:08:05	94c36e3d-e4d4-4cea-a088-f0ec45c22727	SyntaxError: Expected ',' or '}' after property value in JSON at position 33 (line 1 column 34)
